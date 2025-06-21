@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1180" height="420" viewBox="0 0 590 210">
+<defs>
+<path d="M20,25 L570,25" stroke="gray" id="d0" />
+<path d="M20,105 L570,105" stroke="gray" id="d1" />
+<path d="M20,185 L570,185" stroke="gray" id="d2" />
+<marker markerWidth="6.0" markerHeight="6.0" viewBox="-1 -1 2 2" orient="auto" id="d3">
+<path d="M-1,0.5 L-1,-0.5 L0.3,0 Z" fill="black" />
+</marker>
+<path d="M40,185 L70,107" stroke="black" stroke-width="2" marker-end="url(#d3)" id="d4" />
+<path d="M100,105 L130,183" stroke="black" stroke-width="2" marker-end="url(#d3)" id="d5" />
+<path d="M190,25 L220,103" stroke="black" stroke-width="2" marker-end="url(#d3)" id="d6" />
+<path d="M250,105 L280,27" stroke="black" stroke-width="2" marker-end="url(#d3)" id="d7" />
+<path d="M310,25 L340,103" stroke="black" stroke-width="2" marker-end="url(#d3)" id="d8" />
+<path d="M370,105 L400,27" stroke="black" stroke-width="2" marker-end="url(#d3)" id="d9" />
+<path d="M160,185 L430,107" stroke="black" stroke-width="2" marker-end="url(#d3)" id="d10" />
+<path d="M460,105 L490,183" stroke="black" stroke-width="2" marker-end="url(#d3)" id="d11" />
+<marker markerWidth="6" markerHeight="6" viewBox="-3 -3 6 6" orient="auto" id="d12">
+<path d="M-2,-2 L2,2" stroke="red" stroke-width="1" />
+<path d="M-2,2 L2,-2" stroke="red" stroke-width="1" />
+</marker>
+<path d="M520,185 L545,120" stroke="black" stroke-width="2" marker-end="url(#d12)" id="d13" />
+</defs>
+<use xlink:href="#d0" />
+<text font-size="8" font-family="Verdana"><textPath xlink:href="#d0" startOffset="0">
+<tspan dy="-0.6em">user1</tspan>
+</textPath></text>
+<use xlink:href="#d1" />
+<text font-size="8" font-family="Verdana"><textPath xlink:href="#d1" startOffset="0">
+<tspan dy="-0.6em">service</tspan>
+</textPath></text>
+<use xlink:href="#d2" />
+<text font-size="8" font-family="Verdana"><textPath xlink:href="#d2" startOffset="0">
+<tspan dy="-0.6em">user2</tspan>
+</textPath></text>
+<use xlink:href="#d4" />
+<text font-size="8" font-family="Verdana" text-anchor="middle"><textPath xlink:href="#d4" startOffset="50%">
+<tspan dy="-0.6em">get v</tspan>
+</textPath></text>
+<use xlink:href="#d5" />
+<text font-size="8" font-family="Verdana" text-anchor="middle"><textPath xlink:href="#d5" startOffset="50%">
+<tspan dy="-0.6em">v=0; etag=x</tspan>
+</textPath></text>
+<text x="150" y="195" font-size="8" font-family="Verdana">1</text>
+<use xlink:href="#d6" />
+<text font-size="8" font-family="Verdana" text-anchor="middle"><textPath xlink:href="#d6" startOffset="50%">
+<tspan dy="-0.6em">get v</tspan>
+</textPath></text>
+<use xlink:href="#d7" />
+<text font-size="8" font-family="Verdana" text-anchor="middle"><textPath xlink:href="#d7" startOffset="50%">
+<tspan dy="-0.6em">v=0; etag=x</tspan>
+</textPath></text>
+<use xlink:href="#d8" />
+<text font-size="8" font-family="Verdana" text-anchor="middle"><textPath xlink:href="#d8" startOffset="50%">
+<tspan dy="-0.6em">put v=1; etag=x</tspan>
+</textPath></text>
+<use xlink:href="#d9" />
+<text font-size="8" font-family="Verdana" text-anchor="middle"><textPath xlink:href="#d9" startOffset="50%">
+<tspan dy="-0.6em">ok etag=y</tspan>
+</textPath></text>
+<use xlink:href="#d10" />
+<text font-size="8" font-family="Verdana" text-anchor="middle"><textPath xlink:href="#d10" startOffset="50%">
+<tspan dy="-0.6em">put v=2; etag=x</tspan>
+</textPath></text>
+<text x="493" y="180" font-size="8" font-family="Verdana">2</text>
+<use xlink:href="#d11" />
+<text font-size="8" font-family="Verdana" text-anchor="middle"><textPath xlink:href="#d11" startOffset="50%">
+<tspan dy="-0.6em">stale etag</tspan>
+</textPath></text>
+<use xlink:href="#d13" />
+<text font-size="8" font-family="Verdana" text-anchor="middle"><textPath xlink:href="#d13" startOffset="50%">
+<tspan dy="-0.6em">get v</tspan>
+</textPath></text>
+</svg>
