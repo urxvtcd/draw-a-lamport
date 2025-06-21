@@ -22,6 +22,7 @@
 </marker>
 <path d="M520,185 L545,120" stroke="black" stroke-width="2" marker-end="url(#d12)" id="d13" />
 </defs>
+<rect x="0" y="0" width="590" height="210" fill="#eee" />
 <use xlink:href="#d0" />
 <text font-size="8" font-family="Verdana"><textPath xlink:href="#d0" startOffset="0">
 <tspan dy="-0.6em">user1</tspan>

@@ -20,6 +20,7 @@ BAD_ARROW_HEADROOM_Y = 15
 
 MESSAGE_LINE_COLOR = "black"
 ACTOR_LINE_COLOR = "gray"
+BACKGROUND_COLOR = "#eee"
 
 
 def make_arrow(color):
@@ -206,10 +207,10 @@ def draw_messages(actors, ticks):
 
 
 def draw_diagram(actors, ticks, output_filename):
-    d = draw.Drawing(
-        TICK_WIDTH * (len(ticks) - 1) + 2 * (ACTOR_MARGIN_X + MSG_MARGIN),
-        ACTOR_HEIGHT * (len(actors) - 1) + 2 * ACTOR_MARGIN_Y,
-    )
+    x = TICK_WIDTH * (len(ticks) - 1) + 2 * (ACTOR_MARGIN_X + MSG_MARGIN)
+    y = ACTOR_HEIGHT * (len(actors) - 1) + 2 * ACTOR_MARGIN_Y
+    d = draw.Drawing(x, y)
+    d.append(draw.Rectangle(0, 0, x, y, fill=BACKGROUND_COLOR))
     d.set_pixel_scale(2)
 
     for line in draw_actor_lines(len(ticks), actors):
